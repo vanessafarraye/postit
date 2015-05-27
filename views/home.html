@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to postIt</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
+  <script type='text/javascript' src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<!-- postit -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+</head>
+<body>
+	 	
+	<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+            <div class="account-box">
+            	  <div class="logo ">
+                    <p>PostIt</p>
+                </div>
+                <form method="POST" action="/">
+                <div class="form-group">
+                    <input type="email" name="user[email]" class="form-control" placeholder="Email" required autofocus />
+                </div>
+                <div class="form-group">
+                    <input type="password" name="user[password]" class="form-control" placeholder="Password" required />
+                </div>
+                <button class="btn btn-lg btn-block purple-bg" type="submit">
+                    Sign in</button>
+                </form>
+                <div class="or-box row-block">
+                    <div class="row">
+                        <div class="col-md-12 row-block">
+                            <a href="http://localhost:3000/signup" class="btn btn-primary btn-block">Create New Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

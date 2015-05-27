@@ -1,0 +1,125 @@
+.account-box {
+    border: 2px solid rgba(153, 153, 153, 0.75);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -o-border-radius: 2px;
+    z-index: 3;
+    font-size: 13px !important;
+    font-family: "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 40px 0px 0px 0px;
+    border-color: #6C2078;
+}
+
+.logo {
+    width: 138px;
+    height: 40px;
+    text-align: center;
+    margin: 20px 0px 27px 40px;
+    background-position: 0px -4px;
+    position: relative;
+    color: #9D39B1;
+    font-size: 30px;
+    font-family: comic-sans;
+}
+
+.forgotLnk {
+    margin-top: 10px;
+    display: block;
+}
+
+.purple-bg {
+    background-color: #9D39B1;
+    color: #fff;
+    border-color: #6C2078;
+}
+.or-box {
+    position: relative;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    margin-top:20px;
+}
+.or {
+    color: #666666;
+    background-color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: -8px;
+    width: 40px;
+    left: 90px;
+}
+.account-box .btn:hover
+{
+    color: #fff;
+}
+.btn-primary {
+    background-color: #9D39B1;
+    border-color: #6C2078;
+    color: #fff;
+    font-size: 16px;
+}
+.form-control {
+    border-color: #6C2078;
+}
+
+
+
+.panel-default {
+    margin: 40px 0px 0px 0px;
+    border-color: #6C2078;
+}
+.panel-title {
+        color: #9D39B1;
+    font-size: 30px;
+    font-family: comic-sans;
+}
+.btn-info {
+    background-color: #9D39B1;
+    border-color: #6C2078;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+#uploadForm {
+    margin: 40px 0px 40px 0px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#userPhoto {
+    color: #9D39B1;
+    font-size: 16px;
+}
+.list-group-item {
+    border: 2px solid rgba(153, 153, 153, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    color: #9D39B1;
+    font-size: 30px; 
+    border-color: #6C2078;
+    padding: 10px;
+}
+.form-inline {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #9D39B1;
+    font-size: 15px; 
+    border-color: #6C2078;
+    padding: 10px;
+}
+.btn-default {
+    background-color: #fff;
+    border-color: #fff;
+    color: #9D39B1;
+    font-weight: bold;
+    font-size: 16px;
+    width: 10%;
+}

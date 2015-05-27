@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script type='text/javascript' src='/bower_components/jquery/dist/jquery.min.js'></script>
+	  <script type='text/javascript' src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+	  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="/css/main.css">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+			<!-- postit -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<script type="text/javascript" src="/javascripts/app.js"></script>
+</head>
+<body>
+	<form id="uploadForm" enctype="multipart/form-data" action="/api/photo" method="post" >
+		<input type="file" id="userPhoto" name="userPhoto">
+		<input type="submit" value="Upload Image" name="submit">
+	</form>
+	<ul class="list-group" id="pic-ul">
+    </ul>
+</body>
+<script type="text/template" id="pic-template">
+    <li class='list-group-item'><%= templateUser.first_name %> <%= templateUser.last_name %></li>
+    <% _.each(templateUser.pictures, function(img){ %>
+    	<li class='list-group-item'> <img src="<%= img.fpath %>" style="width:250px"> 
+    		<button data-id="<%= img._id %>" onclick="View.delete(this)" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    		<form action="/picture/:id" method="PUT" class="form-inline">
+	    		<input data-id="<%= img._id %>" type="text" name="picSchema[description]">
+	    		<button type="submit" id="submitButton" class="btn btn-default">GO!</button>
+    		</form>
+    	</li> 
+    <% }) %>
+</script>
+</html>
