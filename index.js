@@ -84,9 +84,11 @@ onFileUploadStart: function (file, req, res) {
 onFileUploadComplete: function (file, req, res) {
   console.log(file.fieldname + ' uploaded to  ' + file.path)
   done=true;
+  console.log("BODY", req.body["img[description]"])
   req.user.pictures.push({
     fname: file.name,
-    fpath: file.path
+    fpath: file.path,
+    description: req.body["img[description]"]
   })
   req.user.save(function (err, user) {
     console.log("SAVED!!!!")
@@ -182,13 +184,26 @@ app.delete("/pictures/:id", function (req, res){
     })
 });
 
-app.post("/picture/:id", function (req, res){
-  var description = req.body;
-  console.log("here is the description ", description)
-  //res.send(description);
-  //res.send(JSON.stringify(description));
-  //res.redirect("/profile");
-});
+// app.post("/picture/:id", function (req, res){
+//   var description = req.body.imgDescription;
+//   console.log("here is the description ", description)
+//   //res.redirect("/profile");
+//   db.User.
+//     // step 1: find the user id and the picture id
+//     findOne({
+//       _id: req.session.userId,
+//       "pictures._id": req.params.id
+//     }, function (err, user) {
+//       // step 2 finding the pic path
+//       if (err){ console.log(err) }
+//       var pic = user.pictures.id(req.params.id);
+//       pic.description = description;
+//       pic.save(function (err) {
+//         console.log("description saved")
+//         res.status(204).end("YAYYY");
+//       })
+//     })
+// });
 
 // app.delete("/currentUser", function (req, res) {
 //   db.User.findByIdAndRemove(req.session.userId, 

@@ -1,7 +1,8 @@
 $(function () {
 	//alert("Hello")
 	View.currentUser();
-
+	
+	// View.picDescription();
 
 	
 });
@@ -36,3 +37,21 @@ View.delete = function(picture) {
 			View.currentUser();	
 	    });
 };
+
+// View.picDescription = function(descriptionParams) {
+// 	console.log("hello", descriptionParams);
+// 	var picId = $(descriptionParams).data().id;
+// 	console.log(picId);
+// 		$.ajax({
+// 			url: '/pictures/' + picId,
+// 			type: 'POST',
+// 			success: function(res) {
+// 				console.log("almost here")
+// 			}
+// 		}).done(function() {
+// 			console.log("readyyyyy");
+// 			View.currentUser();	
+// 	    });
+	
+// };
+

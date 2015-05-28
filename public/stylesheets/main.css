@@ -1,10 +1,10 @@
 .account-box {
-    border: 2px solid rgba(153, 153, 153, 0.75);
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -khtml-border-radius: 2px;
-    -o-border-radius: 2px;
+    border: 3px solid rgba(153, 153, 153, 0.75);
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    -o-border-radius: 25px;
     z-index: 3;
     font-size: 13px !important;
     font-family: "Helvetica Neue" ,Helvetica,Arial,sans-serif;
@@ -21,7 +21,7 @@
     margin: 20px 0px 27px 40px;
     background-position: 0px -4px;
     position: relative;
-    color: #9D39B1;
+    color: rgba(189, 12, 217, 1);
     font-size: 30px;
     font-family: comic-sans;
 }
@@ -32,9 +32,68 @@
 }
 
 .purple-bg {
-    background-color: #9D39B1;
+    background-color: rgba(190, 144, 212, 1);
     color: #fff;
+    outline: none;
+    border: 2px solid #6C2078;
+}
+.btn-block:hover {
+    background-color: #6C2078;
+    outline: none;
+    border: 2px solid #6C2078;
     border-color: #6C2078;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+#first_name {
+    outline: none;
+    border: 2px solid #6C2078;
+    border-color: #6C2078;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #6C2078;
+}
+#last_name {
+    outline: none;
+    border: 2px solid #6C2078;
+    border-color: #6C2078;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #6C2078;
+}
+#email{
+    outline: none;
+    border: 2px solid #6C2078;
+    border-color: #6C2078;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #6C2078;
+}
+
+#uploadForm {
+    background-color: rgba(190, 144, 212, 1);
+    border: 2px solid #6C2078;
+    border-radius: 25px;
+    padding: 20px;
+    padding-left: 150px;
+    margin: 40px 0px 40px 0px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#password{
+    outline: none;
+    border: 2px solid #6C2078;
+    border-color: #6C2078;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #6C2078;
 }
 .or-box {
     position: relative;
@@ -56,8 +115,8 @@
     color: #fff;
 }
 .btn-primary {
-    background-color: #9D39B1;
-    border-color: #6C2078;
+    background-color: rgba(190, 144, 212, 1);
+    border: 2px solid #6C2078;
     color: #fff;
     font-size: 16px;
 }
@@ -66,42 +125,52 @@
 }
 
 
-
+.panel-heading{
+    border-radius: 25px;
+}
 .panel-default {
     margin: 40px 0px 0px 0px;
-    border-color: #6C2078;
+    border: 3px solid #6C2078;
+    border-radius: 25px;
 }
 .panel-title {
-        color: #9D39B1;
+    color: rgba(189, 12, 217, 1);
     font-size: 30px;
     font-family: comic-sans;
 }
 .btn-info {
-    background-color: #9D39B1;
-    border-color: #6C2078;
+    background-color: rgba(190, 144, 212, 1);
+    border: 2px solid #6C2078;
     color: #fff;
     font-size: 16px;
 }
 
 
-
-#uploadForm {
-    margin: 40px 0px 40px 0px; 
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
 #userPhoto {
-    color: #9D39B1;
+    color: #6C2078;
     font-size: 16px;
 }
+#imgDes {
+    color: #6C2078;
+    background-color: rgba(190, 144, 212, 1); 
+    font-size: 16px; 
+    outline: none;
+    border: 1px solid #6C2078;
+    border-color: #6C2078;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
 .list-group-item {
-    border: 2px solid rgba(153, 153, 153, 0.75);
+    border: 2px solid #6C2078;
+    border-top-left-radius: 25px;
+    border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
     text-align: center;
-    color: #9D39B1;
+    color: rgba(189, 12, 217, 1);
     font-size: 30px; 
     border-color: #6C2078;
     padding: 10px;
@@ -110,7 +179,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #9D39B1;
+    color: #D551DD;
     font-size: 15px; 
     border-color: #6C2078;
     padding: 10px;
@@ -118,8 +187,13 @@
 .btn-default {
     background-color: #fff;
     border-color: #fff;
-    color: #9D39B1;
+    color: #D551DD;
     font-weight: bold;
     font-size: 16px;
     width: 10%;
+}
+li p {
+    color: rgba(187, 87, 203, 1);
+    font-size: 16px; 
+    text-align: center;
 }
