@@ -57,7 +57,7 @@ userSchema.statics.authenticate = function (params, cb) {
     function (err, user) {
       if (user) {
         user.checkPswrd(params.password, cb);
-      } else (!user) {
+      } else {
         cb("OOPS", null);
       }
     });
