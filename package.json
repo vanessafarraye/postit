@@ -2,9 +2,27 @@
   "dependencies": {
     "bcrypt": "^0.8.3",
     "body-parser": "^1.12.4",
+    "bower": "^1.4.1",
     "express": "^4.12.4",
     "express-session": "^1.11.2",
     "mongoose": "^4.0.3",
     "multer": "^0.1.8"
-  }
+  },
+  "name": "postit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm install && bower install && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanessafarraye/postit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanessafarraye/postit/issues"
+  },
+  "homepage": "https://github.com/vanessafarraye/postit"
 }
