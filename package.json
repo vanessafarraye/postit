@@ -13,7 +13,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "npm install && bower install && node index.js"
+    "start": "node index.js",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
