@@ -75,3 +75,5 @@ userSchema.methods.checkPswrd = function(password, cb) {
 var User = mongoose.model("User", userSchema);
 
 module.exports = User;
+
+// blgbnkfgf kg
