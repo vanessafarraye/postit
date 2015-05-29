@@ -97,6 +97,16 @@ onFileUploadComplete: function (file, req, res) {
 }
 }));
 
+app.post("/api/photo",function(req,res){
+  if(done==true){
+    done=false;
+    console.log(req.files);
+    res.redirect("/profile");
+  } else {
+    console.log("error");
+  }
+});
+
 var views = path.join(__dirname, "views");
 
 app.get("/", function (req, res) {
@@ -146,15 +156,6 @@ app.get("/profile", function (req, res) {
     }); 
 });
 
-app.post("/api/photo",function(req,res){
-  if(done==true){
-    done=false;
-    console.log(req.files);
-    res.redirect("/profile");
-  } else {
-    console.log("error");
-  }
-});
 
 app.get("/currentUser", function (req, res) {
   req.currentUser(function (err, user) {
@@ -189,34 +190,7 @@ app.delete("/pictures/:id", function (req, res){
     })
 });
 
-// app.post("/picture/:id", function (req, res){
-//   var description = req.body.imgDescription;
-//   console.log("here is the description ", description)
-//   //res.redirect("/profile");
-//   db.User.
-//     // step 1: find the user id and the picture id
-//     findOne({
-//       _id: req.session.userId,
-//       "pictures._id": req.params.id
-//     }, function (err, user) {
-//       // step 2 finding the pic path
-//       if (err){ console.log(err) }
-//       var pic = user.pictures.id(req.params.id);
-//       pic.description = description;
-//       pic.save(function (err) {
-//         console.log("description saved")
-//         res.status(204).end("YAYYY");
-//       })
-//     })
-// });
 
-// app.delete("/currentUser", function (req, res) {
-//   db.User.findByIdAndRemove(req.session.userId, 
-//     function (err, user) {
-//       req.logout();
-//       res.status(200).end("Destroyed")
-//     });
-// })
 
 app.listen(process.env.PORT || 3000)
 // app.listen(3000, function () {
