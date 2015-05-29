@@ -175,7 +175,12 @@ app.delete("/pictures/:id", function (req, res){
       var pic = user.pictures.id(req.params.id);
       var picPath = path.join(__dirname, pic.fpath);
       // step 3 removing the pic from file
-      fs.unlinkSync(picPath);
+      try {
+        fs.unlinkSync(picPath);
+      } catch (error) {
+        console.log('Failed to unlink picPath with error: ', error)
+      }
+
       // step 4 removing the picture from db
       pic.remove();
       user.save(function (err) {
