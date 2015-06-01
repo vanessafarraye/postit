@@ -1,6 +1,11 @@
-# My project's name is PostIt
+# PostIt
 
-### After you clone or fork this repo, follow this steps:
+#### Description:
+
+PostIt is an app where you can upload pictures and add a description to them. 
+
+
+##### After you clone or fork this repo, follow this steps:
 
 * You have to type on your terminal:
 ```
@@ -24,7 +29,6 @@ Note: remember you have to run mongo and nodemon in different tabs
 localhost:3000 on your computer in chrome
 ```
 
-In this app you'll have to create an account in order for it to work and take you to your profile, after you create an account it will automatically take you to your new profile page where you can upload pictures and a description for every picture.
+After you follow all the necessary steps, create an account and start uploading as many pictures as you want.
 
-If you alredy have an account you just have to sign in and you're ready to upload as much pictures as you want 
-
+If you alredy have an account, you just have to sign in.
