@@ -1,6 +1,6 @@
-## My project's name is PostIt
+# My project's name is PostIt
 
-You can clone this repo or fork it, then you'll have to do a several steps in order to run it in your computer
+### After you clone or fork this repo, follow this steps:
 
 * You have to type on your terminal:
 ```
