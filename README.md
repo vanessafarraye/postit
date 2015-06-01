@@ -21,7 +21,7 @@ mongod
 ```
 nodemon
 ```
-Note: remember you have to run mongo and nodemon in different tabs
+Note: remember you have to run mongo and nodemon in the app folder and in different tabs.
 
 * After following those steps, got to chrome and type:
 ```
