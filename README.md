@@ -2,22 +2,24 @@
 
 You can clone this repo or fork it, then you'll have to do a several steps in order to run it in your computer
 
-*First you have to do
+* You have to type on your terminal:
 ```
 npm install
 ```
 
-*Second run mongo on your terminal by typing 
+* Run mongo on your terminal by typing 
 ```
 mongod
 ```
 
-*Third run nodemon on your terminal by typing
+* Run nodemon on your terminal by typing
 ```
 nodemon
 ```
 
-After following those steps, got to 
+Note: remember you have to run mongo and nodemon in different tabs
+
+* After following those steps, got to 
 ```
 localhost:3000 on your computer in chrome
 ```
